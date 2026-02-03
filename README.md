@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Backend-black?logo=flask)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-AI-orange)
+![Healthcare AI](https://img.shields.io/badge/Healthcare-AI-green)
+
 🏥 AI-Based Hospital Staffing & Operations Optimization System
 📌 Overview
 
