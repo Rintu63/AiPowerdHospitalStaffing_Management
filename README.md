@@ -6,6 +6,7 @@
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-orange?logo=googlecolab)
 ![VS Code](https://img.shields.io/badge/VS%20Code-IDE-blue?logo=visualstudiocode)
 ![Healthcare AI](https://img.shields.io/badge/Healthcare-AI-green)
+
 🏥 AI-Based Hospital Staffing & Operations Optimization System
 📌 Overview
 
