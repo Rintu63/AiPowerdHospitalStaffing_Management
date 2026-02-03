@@ -1,24 +1,11 @@
-### 🛠️ Technology Stack
-
-- **Programming Language:**  
-  ![Python](https://img.shields.io/badge/Python-blue?logo=python)
-
-- **Backend Framework:**  
-  ![Flask](https://img.shields.io/badge/Flask-black?logo=flask)
-
-- **Frontend / Dashboard:**  
-  ![Streamlit](https://img.shields.io/badge/Streamlit-red?logo=streamlit)
-
-- **Data Processing & Analytics:**  
-  ![Pandas](https://img.shields.io/badge/Pandas-purple?logo=pandas)
-
-- **AI / Machine Learning:**  
-  ![Machine Learning](https://img.shields.io/badge/AI-ML-orange)
-
-- **Development Tools:**  
-  ![Google Colab](https://img.shields.io/badge/Google%20Colab-orange?logo=googlecolab)
-  ![VS Code](https://img.shields.io/badge/VS%20Code-blue?logo=visualstudiocode)
-
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Backend-black?logo=flask)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-purple?logo=pandas)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-AI-orange)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-orange?logo=googlecolab)
+![VS Code](https://img.shields.io/badge/VS%20Code-IDE-blue?logo=visualstudiocode)
+![Healthcare AI](https://img.shields.io/badge/Healthcare-AI-green)
 🏥 AI-Based Hospital Staffing & Operations Optimization System
 📌 Overview
 
