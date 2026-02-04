@@ -15,8 +15,9 @@ This file includes:
 import streamlit as st
 import pandas as pd
 import os
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 import datetime as dt
+from pytz import timezone
 
 # Try to import joblib, fallback if not available
 try:
@@ -28,6 +29,18 @@ except ImportError:
 # ==================================================
 # 2. CONFIGURATION
 # ==================================================
+# Indian Standard Time (IST)
+IST = timezone('Asia/Kolkata')
+
+def get_ist_time():
+    """Get current time in Indian Standard Time (IST)"""
+    return datetime.now(IST)
+
+def format_ist_time(dt_obj=None):
+    """Format time in IST"""
+    if dt_obj is None:
+        dt_obj = get_ist_time()
+    return dt_obj.strftime("%Y-%m-%d %H:%M:%S IST")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "models", "demand_model.pkl")
 DATA_PATH = os.path.join(BASE_DIR, "data", "staff_schedule.csv")
@@ -193,7 +206,7 @@ def save_daily_snapshot(payload, staff_df):
 
 def send_alert(staff_id, message):
     """Send alert to staff"""
-    timestamp = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = format_ist_time()
     print(f"[{timestamp}] 📲 Alert sent to {staff_id}: {message}")
 
 def bulk_alert(staff_list, message):
@@ -359,7 +372,7 @@ def urban_ai_staffing(data, model):
 def log_event(event_type, description):
     """Log event to audit log"""
     log = {
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "timestamp": format_ist_time(),
         "event": event_type,
         "description": description
     }
@@ -374,7 +387,7 @@ def log_event(event_type, description):
 
 def generate_staff_id(role, staff_df):
     """Auto-generate unique staff ID based on role & year"""
-    year = datetime.now().year
+    year = get_ist_time().year
 
     role_prefix = {
         "Doctor": "DOC",
@@ -713,11 +726,11 @@ with header_col1:
     st.caption("⚡ AI-Powered Staffing • Real-time Operations • Intelligent Scheduling")
 
 with header_col2:
-    current_time = datetime.now().strftime("%H:%M:%S")
+    current_time = get_ist_time().strftime("%H:%M:%S")
     st.markdown(f"""
     <div style="text-align: right; padding: 1rem; background: linear-gradient(135deg, #1E293B, #334155); 
     border-radius: 12px; border: 1px solid #475569;">
-    <div style="color: #94A3B8; font-size: 0.9rem;">System Time</div>
+    <div style="color: #94A3B8; font-size: 0.9rem;">System Time (IST)</div>
     <div style="color: #60A5FA; font-size: 1.8rem; font-weight: bold; font-family: 'Courier New';">{current_time}</div>
     </div>
     """, unsafe_allow_html=True)
