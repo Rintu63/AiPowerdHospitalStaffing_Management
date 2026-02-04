@@ -258,3 +258,4 @@ DOC-2026-0002,hello,Doctor,Emergency,,,,,,Evening,Active
 DOC-2026-0003,charli,Doctor,Emergency,,,,,,Night,Active
 PHA-2026-0001,charli,Pharmacist,Pharmacy,,,,,,Evening,Active
 DOC-2026-0004,Lalatendu Kumar Sahu,Doctor,Emergency,yes,yes,,HIGH,yes,Night,Active
+DOC-2026-0005,din,Doctor,Emergency,yes,yes,,MODERATE,yes,Night,Active
