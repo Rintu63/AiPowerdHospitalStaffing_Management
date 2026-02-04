@@ -1,5 +1,4 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Backend-black?logo=flask)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-purple?logo=pandas)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-AI-orange)
